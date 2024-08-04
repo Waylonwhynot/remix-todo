@@ -1,0 +1,12 @@
+/*页头部分*/
+header {
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    color: white;
+    text-align: center;
+    padding: 30px 40px;
+}
+
+h1 {
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}

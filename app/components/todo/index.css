@@ -1,0 +1,92 @@
+ul li {
+    cursor: pointer;
+    padding-left: 40px;
+    list-style-type: none;
+    background: #bbb;
+    font-size: 14px;
+    transition: 0.2s;
+    user-select: none;
+    display: flex;
+    align-items: baseline;
+}
+
+
+ul li:nth-child(odd) {
+    background: #c9ced0;
+}
+
+ul li:hover {
+    background: #ddd;
+}
+
+
+.content {
+    display: flex;
+    flex: 23;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.content input:checked ~ label {
+    color: white;
+    text-decoration: line-through;
+}
+
+.content input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+}
+
+.content:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.content input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.content input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.content .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+
+.del {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+}
+
+.del:hover {
+    background-color: tomato;
+    color: white;
+}

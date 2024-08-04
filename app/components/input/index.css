@@ -1,0 +1,29 @@
+
+input {
+    width: 90%;
+    margin-right: 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.btn-add {
+    width: 10%;
+    padding: 10px;
+    margin-left: 0;
+    background: #d9d9d9;
+    color: #555;
+    text-align: center;
+    font-size: 14px;
+    transition: 0.3s;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-add:hover {
+    background-color: #bbb;
+    color: white;
+}

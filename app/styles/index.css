@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PingFang SC", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+nav {
+    display: flex;
+    justify-items: start;
+}
+
+nav a {
+    padding: 10px;
+}
